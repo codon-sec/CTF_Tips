@@ -15,6 +15,7 @@ int main(){
     } else {
         puts("Enter the pid of the child process");
         fgets(buf, sizeof(buf), stdin);
+        user_input = atoi(buf);
         if (pid == user_input){
             puts("Congratulations! Your Flag is ctf4b{7h15_15_s1mp13_ltrace}");
         }
