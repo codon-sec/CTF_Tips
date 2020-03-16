@@ -3,7 +3,7 @@
 
 char buffer[32];
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[]) {
     char local[32];
     printf("buffer: 0x%x\n", &buffer);
     fgets(local, 128, stdin);
