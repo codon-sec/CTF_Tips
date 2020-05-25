@@ -45,6 +45,8 @@
     1. '../../../../flag.txt'のような名前のファイルを作成し、アップロードする。
     (バイナリ編集)
     2. (php スクリプト)?filename=../../../../flag.txt にアクセスする
+    
+    Answer: ctf4b{y0u_c4nn07_7ru57_4ny_1npu75_1nclud1n6_z1p_f1l3n4m35}
 
 ## pwn
 
