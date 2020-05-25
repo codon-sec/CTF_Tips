@@ -20,6 +20,7 @@ def attack(username):
     return elasped_time
 
 for c in candidates:
+    # strip: 改行を外す,デフォルトでは空白文字のみを削除する
     t = attack(c.strip())
     if (t > 0.2):
         print(c.strip(), t)
