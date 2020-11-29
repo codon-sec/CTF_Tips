@@ -6,7 +6,7 @@ pass_len = 21
 password = ''
 
 # 1.1文字ずつ順番に調べる
-for i in range(1, pass_len):
+for i in range(1, pass_len + 1):
     # 2.対象の1文字を0~{ まで調べる
     for char_number in range(48,123):
         check_chr = chr(char_number)
@@ -26,3 +26,6 @@ for i in range(1, pass_len):
             break
 print()
 print(password)
+
+# result
+# FLAG_KpWa4ji3uZk6TrPK
