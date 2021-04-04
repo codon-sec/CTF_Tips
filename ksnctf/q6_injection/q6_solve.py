@@ -7,7 +7,7 @@ password = ''
 
 # 1.1文字ずつ順番に調べる
 for i in range(1, pass_len + 1):
-    # 2.対象の1文字を0~{ まで調べる
+    # 2.対象の1文字を0~{ まで調べる / ←CTFで使われている文字列を推測している
     for char_number in range(48,123):
         check_chr = chr(char_number)
         # ? \'{check_chr}\'はstr比較を行うため必要である

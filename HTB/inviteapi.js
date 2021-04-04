@@ -17,3 +17,7 @@ eval((function(p, a, c, k, e, r) {
     console.log(p);
     return p
 }('0 3(){$.4({5:"6",7:"8",9:\'/b/c/d/e/f\',g:0(a){1.2(a)},h:0(a){1.2(a)}})}', 18, 18, 'function|console|log|makeInviteCode|ajax|type|POST|dataType|json|url||api|invite|how|to|generate|success|error'.split('|'), 0, {})))
+
+// result
+// {"success":1,"data":{"data":"SW4gb3JkZXIgdG8gZ2VuZXJhdGUgdGhlIGludml0ZSBjb2RlLCBtYWtlIGEgUE9TVCByZXF1ZXN0IHRvIC9hcGkvaW52aXRlL2dlbmVyYXRl",
+// "enctype":"BASE64"},"hint":"Data is encrypted \u2026 We should probably check the encryption type in order to decrypt it\u2026","0":200}%  

