@@ -1,4 +1,6 @@
 # python 3.7.3+ required
+import re
+
 is_code_regex = re.compile(r"[a-zA-Z]+")
 text = input()
 mo = is_code_regex.findall(text)
