@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 # アクセス先URL
-url = "http://ctfq.u1tramarine.blue/q9//flag.html"
+url = "http://ctfq.u1tramarine.blue/q9/flag.html"
 
 # response用に用いるパラメタ
 md5a1 = "c627e19450db746b739f41b64097d449"
@@ -13,7 +13,7 @@ nc = "00000001"
 cnonce = "5f70c9b7a0f15b7d"
 qop = "auth"
 a2 = "GET:/q9/flag.html"
-md5a2 = "ffffdd8b8029499600f95a69beb239c2"
+md5a2 = "9e2b6bca5d4d92f6ead358623df264c8"
 
 # Authorizationヘッダ作成に用いるパラメタ
 username = "q9"
@@ -30,9 +30,11 @@ def get_md5(arg):
 def main():
     # リクエストの送信
     auth_header = requests.get(url).headers["WWW-Authenticate"]
+    print(auth_header)
 
     # nonceの取得
     nonce = auth_header.split(" ")[2][7:-2]
+    print(nonce)
 
     # responseの生成とハッシュ化
     not_md5_response = (
@@ -73,6 +75,7 @@ def main():
     answer = requests.get(url, headers=headers)
 
     answer_soup = bs(answer.text, "html.parser")
+    print(answer_soup)
     print(answer_soup.p.text)
 
 
