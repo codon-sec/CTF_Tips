@@ -1,5 +1,6 @@
 # python 3.8+ required
 # this is a calculate m program
+import binascii
 import math
 
 # 暗号化
@@ -46,3 +47,4 @@ m = pow(c, d, n)
 # to get the flag
 # required python2
 # print("%0512x" % m).decode("hex")
+print(binascii.unhexlify(m.encode()))
