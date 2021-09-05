@@ -19,6 +19,6 @@
 - [RSA暗号運用でやってはいけないnのこと](https://www.slideshare.net/sonickun/rsa-n-ssmjp)
 
 ## Forensics
-- [Tips](https://github.com/codon-sec/CTF_Tips/blob/master/forensics/s.md)
+- [Tips](https://github.com/codon-sec/CTF_Tips/blob/master/forensics/tips.md)
 - [The Sheuth kit](https://github.com/sleuthkit/sleuthkit)
 - [TSK Reference](http://sleuthkit.org/sleuthkit/docs/api-docs/4.10.2/)
