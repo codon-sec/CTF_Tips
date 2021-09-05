@@ -15,3 +15,6 @@ shasum -a 256 <file_name>
 
 ### ハッシュ検索
 - [Malware Reports](https://app.any.run/submissions/)
+
+## Web証跡調査
+- [Wayback Machine](https://web.archive.org/)
