@@ -1,6 +1,6 @@
 # Forensics Tips
 ## Windows
-- Windowsイベントビューア
+- Windows Event Viewer
 ## Sleuthkit コマンド
 - [mmls](http://www.kazamiya.net/Sleuthkit/mmls)
 - [fls](http://www.kazamiya.net/SleuthKit/fls)
