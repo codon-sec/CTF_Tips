@@ -1,4 +1,4 @@
-# 脆弱性 nが小さく素因数分解が可能な場合
+# 脆弱性: nが小さく素因数分解が可能な場合
 
 from Crypto.Util.number import inverse, long_to_bytes
 
