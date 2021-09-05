@@ -1,6 +1,7 @@
 # Forensics Tips
 ## Windows
 - Windows Event Viewer
+- Ophcrack(パスワード解析)
 ## Sleuthkit コマンド
 - [mmls](http://www.kazamiya.net/Sleuthkit/mmls)
 - [fls](http://www.kazamiya.net/SleuthKit/fls)
