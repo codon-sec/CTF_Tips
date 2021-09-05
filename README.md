@@ -14,6 +14,7 @@
 - [CTFネットワーク問題の基本問題](https://tomonori4565.hatenablog.com/entry/2018/10/19/152215)  
 
 ## Crypto
+- [Tips](https://github.com/codon-sec/CTF_Tips/blob/master/crypto/crypto_tips.md)
 - [CyberChef](https://gchq.github.io/CyberChef/)
 - [RSA暗号運用でやってはいけないnのこと](https://www.slideshare.net/sonickun/rsa-n-ssmjp)
 
