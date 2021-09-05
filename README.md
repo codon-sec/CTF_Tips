@@ -12,3 +12,11 @@
 
 ## Network
 - [CTFネットワーク問題の基本問題](https://tomonori4565.hatenablog.com/entry/2018/10/19/152215)  
+
+## Crypto
+- [CyberChef](https://gchq.github.io/CyberChef/)
+- [RSA暗号運用でやってはいけないnのこと](https://www.slideshare.net/sonickun/rsa-n-ssmjp)
+
+## Forensics
+- [The Sheuth kit](https://github.com/sleuthkit/sleuthkit)
+- [TSK Reference](http://sleuthkit.org/sleuthkit/docs/api-docs/4.10.2/)
