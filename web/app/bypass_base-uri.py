@@ -18,7 +18,7 @@ def index():
     nonce = get_nonce
 
     res = Response(f'''
-    <script src="/static/index.js" nonce="{nonce}"</script>)
+    <script src="/static/index.js" nonce="{nonce}"></script>
     <p id="greeting">Hello, {name}!</p>
     ''')
 
