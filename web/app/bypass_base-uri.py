@@ -8,14 +8,14 @@ app = Flask(__name__)
 
 
 def get_nonce():
-    return f'{base64.b64encode(str(random.random().encode()).decode())}'
+    return f'{base64.b64encode(str(random.random()).encode()).decode()}'
 
 
 @app.route('/')
 def index():
     name = request.args.get('name', 'unknown')
 
-    nonce = get_nonce
+    nonce = get_nonce()
 
     res = Response(f'''
     <script src="/static/index.js" nonce="{nonce}"></script>
