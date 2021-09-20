@@ -13,3 +13,6 @@ XSSペイロードを調査
 ## CSP
 CSP設定不備を調査する
 - [CSP Evaluator](https://csp-evaluator.withgoogle.com/)
+
+## SQLi
+- [安全なSQLの呼び出し方](https://www.ipa.go.jp/files/000017320.pdf)
